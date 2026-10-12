@@ -1,0 +1,9 @@
+{
+  "name": "uidt",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && uvicorn api.server:app --reload --port 8000",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "cd backend && pip install -r requirements.txt && cd ../frontend && npm install"
+  }
+}

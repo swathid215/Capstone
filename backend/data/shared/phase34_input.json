@@ -1,0 +1,30 @@
+{
+  "scenario_metadata": {
+    "name": "Phase 3/4 Demo Run",
+    "description": "Standalone Swathi H + Swathi D automation input for n8n testing."
+  },
+  "proposal": {
+    "place_name": "Kathriguppe, Bangalore, India",
+    "point": null,
+    "dist_m": 5000,
+    "infra_type": "New Road",
+    "road_width_m": 8,
+    "is_oneway": false,
+    "geometry_type": "LineString",
+    "smart_analysis": true,
+    "coordinates": [
+      [
+        77.5539,
+        12.9274
+      ],
+      [
+        77.5564,
+        12.9286
+      ],
+      [
+        77.5591,
+        12.9294
+      ]
+    ]
+  }
+}

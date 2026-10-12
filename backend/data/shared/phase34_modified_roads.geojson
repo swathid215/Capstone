@@ -1,0 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.5502265,
+            12.9269457
+          ],
+          [
+            77.5499503,
+            12.925446999999997
+          ]
+        ]
+      },
+      "properties": {
+        "name": "AI Flyover",
+        "highway": "proposed_flyover",
+        "length_m": 152.0491064098868,
+        "infra_type": "Flyover",
+        "is_flyover": true,
+        "is_tunnel": false,
+        "elevation_m": 5.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.5493707,
+            12.9256844
+          ],
+          [
+            77.5502265,
+            12.9269457
+          ]
+        ]
+      },
+      "properties": {
+        "name": "AI Flyover",
+        "highway": "proposed_flyover",
+        "length_m": 162.63542072432585,
+        "infra_type": "Flyover",
+        "is_flyover": true,
+        "is_tunnel": false,
+        "elevation_m": 5.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.5447994,
+            12.929336499999994
+          ],
+          [
+            77.5493707,
+            12.9256844
+          ]
+        ]
+      },
+      "properties": {
+        "name": "AI Flyover",
+        "highway": "proposed_flyover",
+        "length_m": 607.0895446505385,
+        "infra_type": "Flyover",
+        "is_flyover": true,
+        "is_tunnel": false,
+        "elevation_m": 5.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.5499503,
+            12.925446999999997
+          ],
+          [
+            77.55170490000002,
+            12.924517500000002
+          ]
+        ]
+      },
+      "properties": {
+        "name": "AI Flyover",
+        "highway": "proposed_flyover",
+        "length_m": 217.7180140736797,
+        "infra_type": "Flyover",
+        "is_flyover": true,
+        "is_tunnel": false,
+        "elevation_m": 5.0
+      }
+    }
+  ]
+}

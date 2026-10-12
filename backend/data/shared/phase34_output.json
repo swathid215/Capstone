@@ -1,0 +1,327 @@
+{
+    "scenario_metadata": {
+        "name": "Infrastructure package",
+        "description": "Generated from UIDT Traffic Wizard",
+        "created_at": "2026-09-30T23:52:52.706067"
+    },
+    "input_summary": {
+        "place_name": "Kathriguppe, Bangalore, India",
+        "point": [
+            12.926572102669798,
+            77.55104323336997
+        ],
+        "dist_m": 5000,
+        "infra_type": "Flyover",
+        "road_width_m": 7.0,
+        "is_oneway": false,
+        "geometry_type": "LineString",
+        "coordinate_count": 7,
+        "coordinates_lonlat": [
+            [
+                77.544927,
+                12.929186
+            ],
+            [
+                77.549316,
+                12.925788
+            ],
+            [
+                77.5504,
+                12.926802
+            ],
+            [
+                77.550647,
+                12.926698
+            ],
+            [
+                77.549971,
+                12.925495
+            ],
+            [
+                77.55172,
+                12.924533
+            ],
+            [
+                77.55582,
+                12.923153
+            ]
+        ],
+        "intervention_count": 4,
+        "interventions": [
+            {
+                "infra_type": "Flyover",
+                "road_width_m": 7.0,
+                "is_oneway": false,
+                "coordinate_count": 7
+            },
+            {
+                "infra_type": "Widening",
+                "road_width_m": 3.5,
+                "is_oneway": false,
+                "coordinate_count": 8
+            },
+            {
+                "infra_type": "Widening",
+                "road_width_m": 3.5,
+                "is_oneway": false,
+                "coordinate_count": 5
+            },
+            {
+                "infra_type": "Road Block",
+                "road_width_m": 7.0,
+                "is_oneway": false,
+                "coordinate_count": 7
+            }
+        ]
+    },
+    "items": [
+        {
+            "index": 0,
+            "item_id": "5a613c10-5ac8-4179-98f7-cc3cc770fc9c",
+            "name": "flyover 1",
+            "infra_type": "Flyover",
+            "infra_key": "flyover",
+            "role": "main",
+            "road_width_m": 7.0,
+            "extra_lanes": 0,
+            "is_oneway": false,
+            "flyover_height_m": 5.0,
+            "length_m": 1639.3,
+            "is_feasible": false,
+            "collision_count": 13,
+            "coordinates_lonlat": [
+                [
+                    77.544927,
+                    12.929186
+                ],
+                [
+                    77.549316,
+                    12.925788
+                ],
+                [
+                    77.5504,
+                    12.926802
+                ],
+                [
+                    77.550647,
+                    12.926698
+                ],
+                [
+                    77.549971,
+                    12.925495
+                ],
+                [
+                    77.55172,
+                    12.924533
+                ],
+                [
+                    77.55582,
+                    12.923153
+                ]
+            ]
+        },
+        {
+            "index": 1,
+            "item_id": "53db6a93-4419-48eb-a26c-ad72075c7985",
+            "name": "widening 2",
+            "infra_type": "Widening",
+            "infra_key": "widening",
+            "role": "widening",
+            "road_width_m": 3.5,
+            "extra_lanes": 1,
+            "is_oneway": false,
+            "flyover_height_m": 5.0,
+            "length_m": 181.2,
+            "is_feasible": true,
+            "collision_count": 0,
+            "coordinates_lonlat": [
+                [
+                    77.55577990779805,
+                    12.923185590587796
+                ],
+                [
+                    77.55600492891033,
+                    12.923109664536549
+                ],
+                [
+                    77.55608782603214,
+                    12.923082833005571
+                ],
+                [
+                    77.55630189389211,
+                    12.923016681038664
+                ],
+                [
+                    77.55647306434746,
+                    12.922970915589772
+                ],
+                [
+                    77.5565541912432,
+                    12.922946630958275
+                ],
+                [
+                    77.55706089288346,
+                    12.922778321504552
+                ],
+                [
+                    77.55736546492547,
+                    12.922677221601063
+                ]
+            ]
+        },
+        {
+            "index": 2,
+            "item_id": "1ce6b94f-5e9b-4157-a6e4-e81785aab4c4",
+            "name": "widening 3",
+            "infra_type": "Widening",
+            "infra_key": "widening",
+            "role": "widening",
+            "road_width_m": 3.5,
+            "extra_lanes": 1,
+            "is_oneway": false,
+            "flyover_height_m": 5.0,
+            "length_m": 92.4,
+            "is_feasible": true,
+            "collision_count": 0,
+            "coordinates_lonlat": [
+                [
+                    77.54422635143649,
+                    12.929936077901322
+                ],
+                [
+                    77.54445703953711,
+                    12.929713923648073
+                ],
+                [
+                    77.54470783213621,
+                    12.929494283563079
+                ],
+                [
+                    77.54476920963864,
+                    12.929388611455613
+                ],
+                [
+                    77.54478975662785,
+                    12.929325710303551
+                ]
+            ]
+        },
+        {
+            "index": 3,
+            "item_id": "2f84016f-de63-4c3b-a918-fe7972cd99a5",
+            "name": "road_block 4",
+            "infra_type": "Road Block",
+            "infra_key": "road_block",
+            "role": "road_block",
+            "road_width_m": 7.0,
+            "extra_lanes": 0,
+            "is_oneway": false,
+            "flyover_height_m": 5.0,
+            "length_m": 73.7,
+            "is_feasible": false,
+            "collision_count": 1,
+            "coordinates_lonlat": [
+                [
+                    77.55339289469867,
+                    12.924622512950291
+                ],
+                [
+                    77.55339347284195,
+                    12.924489156080057
+                ],
+                [
+                    77.5533912428264,
+                    12.924432892121636
+                ],
+                [
+                    77.55337904468466,
+                    12.924329293854697
+                ],
+                [
+                    77.55335912014496,
+                    12.924244834258369
+                ],
+                [
+                    77.55329337342046,
+                    12.924056201873722
+                ],
+                [
+                    77.55332909344493,
+                    12.923977567291933
+                ]
+            ]
+        }
+    ],
+    "feasibility": {
+        "is_feasible": false,
+        "collision_count": 14,
+        "items": [
+            {
+                "name": "flyover 1",
+                "role": "main",
+                "infra_type": "Flyover",
+                "is_feasible": false,
+                "collision_count": 13
+            },
+            {
+                "name": "widening 2",
+                "role": "widening",
+                "infra_type": "Widening",
+                "is_feasible": true,
+                "collision_count": 0
+            },
+            {
+                "name": "widening 3",
+                "role": "widening",
+                "infra_type": "Widening",
+                "is_feasible": true,
+                "collision_count": 0
+            },
+            {
+                "name": "road_block 4",
+                "role": "road_block",
+                "infra_type": "Road Block",
+                "is_feasible": false,
+                "collision_count": 1
+            }
+        ]
+    },
+    "impact_report": {
+        "Original Network Edges": 76318,
+        "Updated Network Edges": 76314,
+        "New Connections Spliced": -4
+    },
+    "smart_recommendation": {
+        "metrics": {
+            "geometry_type": "LineString",
+            "length_meters": 1639.32,
+            "building_collisions": 14,
+            "network_connections": -4,
+            "collision_density": 0.85,
+            "connectivity_score": -24.4,
+            "land_acquisition_complexity": "High",
+            "urban_density": "High (Urban)",
+            "route_efficiency": 0.83
+        },
+        "recommendation": "Tunnel / Underground Bypass",
+        "reasoning": "High-density urban area with 14 building collisions detected. A surface road would require extensive demolition and land acquisition costing 500+ crores. An underground tunnel minimizes property disruption and is strategically optimal for long-term urban development. The -24.4 connectivity score indicates significant traffic redistribution potential.",
+        "confidence": 0.9,
+        "cost_estimate": "Very High",
+        "implementation_time": "24-36",
+        "risk_factors": [
+            "Geological surveys needed",
+            "Deep excavation complexity",
+            "Traffic diversions during construction",
+            "Underground utility conflicts"
+        ],
+        "environmental_impact": "High (Construction phase)"
+    },
+    "artifacts": {
+        "route_geojson": "/home/tan/UIDT_full_project/UIDT--newfeatures/backend/data/shared/phase34_route.geojson",
+        "modified_roads_geojson": "/home/tan/UIDT_full_project/UIDT--newfeatures/backend/data/shared/phase34_modified_roads.geojson",
+        "collisions_geojson": "/home/tan/UIDT_full_project/UIDT--newfeatures/backend/data/shared/phase34_collisions.geojson",
+        "graphml": "/home/tan/UIDT_full_project/UIDT--newfeatures/backend/data/shared/phase34_modified_network.graphml",
+        "modified_network_netxml": "/home/tan/UIDT_full_project/UIDT--newfeatures/auto_tool/cleaned_modified_network.net.xml",
+        "report_markdown": "/home/tan/UIDT_full_project/UIDT--newfeatures/backend/data/shared/phase34_impact_report.md"
+    }
+}

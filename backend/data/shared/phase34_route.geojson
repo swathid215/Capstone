@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.544927,
+            12.929186
+          ],
+          [
+            77.549316,
+            12.925788
+          ],
+          [
+            77.5504,
+            12.926802
+          ],
+          [
+            77.550647,
+            12.926698
+          ],
+          [
+            77.549971,
+            12.925495
+          ],
+          [
+            77.55172,
+            12.924533
+          ],
+          [
+            77.55582,
+            12.923153
+          ]
+        ]
+      },
+      "properties": {
+        "name": "flyover 1",
+        "role": "main",
+        "infra_type": "Flyover",
+        "road_width_m": 7.0,
+        "extra_lanes": 0,
+        "is_oneway": false,
+        "is_feasible": false,
+        "flyover_height_m": 5.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.55577990779805,
+            12.923185590587796
+          ],
+          [
+            77.55600492891033,
+            12.923109664536549
+          ],
+          [
+            77.55608782603214,
+            12.923082833005571
+          ],
+          [
+            77.55630189389211,
+            12.923016681038664
+          ],
+          [
+            77.55647306434746,
+            12.922970915589772
+          ],
+          [
+            77.5565541912432,
+            12.922946630958275
+          ],
+          [
+            77.55706089288346,
+            12.922778321504552
+          ],
+          [
+            77.55736546492547,
+            12.922677221601063
+          ]
+        ]
+      },
+      "properties": {
+        "name": "widening 2",
+        "role": "widening",
+        "infra_type": "Widening",
+        "road_width_m": 3.5,
+        "extra_lanes": 1,
+        "is_oneway": false,
+        "is_feasible": true,
+        "flyover_height_m": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.54422635143649,
+            12.929936077901322
+          ],
+          [
+            77.54445703953711,
+            12.929713923648073
+          ],
+          [
+            77.54470783213621,
+            12.929494283563079
+          ],
+          [
+            77.54476920963864,
+            12.929388611455613
+          ],
+          [
+            77.54478975662785,
+            12.929325710303551
+          ]
+        ]
+      },
+      "properties": {
+        "name": "widening 3",
+        "role": "widening",
+        "infra_type": "Widening",
+        "road_width_m": 3.5,
+        "extra_lanes": 1,
+        "is_oneway": false,
+        "is_feasible": true,
+        "flyover_height_m": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.55339289469867,
+            12.924622512950291
+          ],
+          [
+            77.55339347284195,
+            12.924489156080057
+          ],
+          [
+            77.5533912428264,
+            12.924432892121636
+          ],
+          [
+            77.55337904468466,
+            12.924329293854697
+          ],
+          [
+            77.55335912014496,
+            12.924244834258369
+          ],
+          [
+            77.55329337342046,
+            12.924056201873722
+          ],
+          [
+            77.55332909344493,
+            12.923977567291933
+          ]
+        ]
+      },
+      "properties": {
+        "name": "road_block 4",
+        "role": "road_block",
+        "infra_type": "Road Block",
+        "road_width_m": 7.0,
+        "extra_lanes": 0,
+        "is_oneway": false,
+        "is_feasible": false,
+        "flyover_height_m": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a1218bc68758f7f0860fae8dc68cb3a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a1218bc68758f7f0860fae8dc68cb3a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a1218bc68758f7f0860fae8dc68cb3a0 = L.map(
+                "map_a1218bc68758f7f0860fae8dc68cb3a0",
+                {
+                    center: [12.94532752784864, 77.55349436913737],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_74f9b58aabca294787465dbd8abf73e6 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_74f9b58aabca294787465dbd8abf73e6.addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            var poly_line_f08f71e463317df29df16e453fece470 = L.polyline(
+                [[12.94532752784864, 77.55349436913737], [12.93164146426222, 77.55222328481835]],
+                {"bubblingMouseEvents": true, "color": "#00FFCC", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00FFCC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 13.181999999999999}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            poly_line_f08f71e463317df29df16e453fece470.bindTooltip(
+                `<div>
+                     <b>From:</b> Srinagar<br><b>To:</b> Katriguppe<br><b>Trips:</b> 65.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_487e9aaf726dd499a1dfe097cdac6968 = L.marker(
+                [12.94532752784864, 77.55349436913737],
+                {
+}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            var div_icon_50f850272cfe977370ec8c005cc63cad = L.divIcon({
+  "html": "\u003cdiv style=\"font-family:sans-serif;color:white;font-size:10px;width:100px;\"\u003eSrinagar\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_487e9aaf726dd499a1dfe097cdac6968.setIcon(div_icon_50f850272cfe977370ec8c005cc63cad);
+            
+    
+            var poly_line_173ed5df789c18ba765b24f9cf8d8f73 = L.polyline(
+                [[12.93164146426222, 77.55222328481835], [12.92168479764718, 77.54840740065688]],
+                {"bubblingMouseEvents": true, "color": "#00FFCC", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00FFCC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 9.443999999999999}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            poly_line_173ed5df789c18ba765b24f9cf8d8f73.bindTooltip(
+                `<div>
+                     <b>From:</b> Katriguppe<br><b>To:</b> Chikkalsandra<br><b>Trips:</b> 47.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7191a6c80b758c6bc5cb403efdd74acc = L.marker(
+                [12.93164146426222, 77.55222328481835],
+                {
+}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            var div_icon_28de123a9653abb1fccdc5c649b58a3d = L.divIcon({
+  "html": "\u003cdiv style=\"font-family:sans-serif;color:white;font-size:10px;width:100px;\"\u003eKatriguppe\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_7191a6c80b758c6bc5cb403efdd74acc.setIcon(div_icon_28de123a9653abb1fccdc5c649b58a3d);
+            
+    
+            var poly_line_f019c9cb592cd6eaff6ae19f4f2db029 = L.polyline(
+                [[12.941109032802073, 77.60480435978748], [12.93164146426222, 77.55222328481835]],
+                {"bubblingMouseEvents": true, "color": "#00FFCC", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00FFCC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 8.97}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            poly_line_f019c9cb592cd6eaff6ae19f4f2db029.bindTooltip(
+                `<div>
+                     <b>From:</b> Vidyapeeta ward<br><b>To:</b> Katriguppe<br><b>Trips:</b> 44.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0d36cc02e26ca5a5e85017a1fdfe74f4 = L.marker(
+                [12.941109032802073, 77.60480435978748],
+                {
+}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            var div_icon_8d70d5596a4d39aad11bfd37ef72cee0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family:sans-serif;color:white;font-size:10px;width:100px;\"\u003eVidyapeeta ward\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_0d36cc02e26ca5a5e85017a1fdfe74f4.setIcon(div_icon_8d70d5596a4d39aad11bfd37ef72cee0);
+            
+    
+            var poly_line_4bcea20c1cb573e80db3838590528c42 = L.polyline(
+                [[12.93164146426222, 77.55222328481835], [12.941109032802073, 77.60480435978748]],
+                {"bubblingMouseEvents": true, "color": "#00FFCC", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00FFCC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 8.77}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            poly_line_4bcea20c1cb573e80db3838590528c42.bindTooltip(
+                `<div>
+                     <b>From:</b> Katriguppe<br><b>To:</b> Vidyapeeta ward<br><b>Trips:</b> 43.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6638e05ec21a0e96bde92367a7a3aae9 = L.marker(
+                [12.93164146426222, 77.55222328481835],
+                {
+}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            var div_icon_2a002f6ba9353128778dc1d24478320b = L.divIcon({
+  "html": "\u003cdiv style=\"font-family:sans-serif;color:white;font-size:10px;width:100px;\"\u003eKatriguppe\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_6638e05ec21a0e96bde92367a7a3aae9.setIcon(div_icon_2a002f6ba9353128778dc1d24478320b);
+            
+    
+            var poly_line_b0f35d7b25164387a530ec40e034e456 = L.polyline(
+                [[12.93164146426222, 77.55222328481835], [12.94532752784864, 77.55349436913737]],
+                {"bubblingMouseEvents": true, "color": "#00FFCC", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00FFCC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 7.5120000000000005}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            poly_line_b0f35d7b25164387a530ec40e034e456.bindTooltip(
+                `<div>
+                     <b>From:</b> Katriguppe<br><b>To:</b> Srinagar<br><b>Trips:</b> 37.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c0210ddbe9b9b4a14059c7382f8db457 = L.marker(
+                [12.93164146426222, 77.55222328481835],
+                {
+}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            var div_icon_6133eb0765d0337ffcc108a42854610f = L.divIcon({
+  "html": "\u003cdiv style=\"font-family:sans-serif;color:white;font-size:10px;width:100px;\"\u003eKatriguppe\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_c0210ddbe9b9b4a14059c7382f8db457.setIcon(div_icon_6133eb0765d0337ffcc108a42854610f);
+            
+    
+            var poly_line_e10cd908fca4315ccb1fe32783c8e6bb = L.polyline(
+                [[12.92168479764718, 77.54840740065688], [12.93164146426222, 77.55222328481835]],
+                {"bubblingMouseEvents": true, "color": "#00FFCC", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00FFCC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 6.874}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            poly_line_e10cd908fca4315ccb1fe32783c8e6bb.bindTooltip(
+                `<div>
+                     <b>From:</b> Chikkalsandra<br><b>To:</b> Katriguppe<br><b>Trips:</b> 34.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1eb670e9e75f560e08a98ebb82789879 = L.marker(
+                [12.92168479764718, 77.54840740065688],
+                {
+}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            var div_icon_67dde3c8095a369c35d32d6895430ec8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family:sans-serif;color:white;font-size:10px;width:100px;\"\u003eChikkalsandra\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_1eb670e9e75f560e08a98ebb82789879.setIcon(div_icon_67dde3c8095a369c35d32d6895430ec8);
+            
+    
+            var poly_line_3b9dfcb8a4e61f1638d82d7c0ce2084e = L.polyline(
+                [[12.93164146426222, 77.55222328481835], [12.937624012769977, 77.5455754828156]],
+                {"bubblingMouseEvents": true, "color": "#00FFCC", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00FFCC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 6.5280000000000005}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            poly_line_3b9dfcb8a4e61f1638d82d7c0ce2084e.bindTooltip(
+                `<div>
+                     <b>From:</b> Katriguppe<br><b>To:</b> Girinagar<br><b>Trips:</b> 32.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4bcc77f9e44c158d1a2f4de2358af8d5 = L.marker(
+                [12.93164146426222, 77.55222328481835],
+                {
+}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            var div_icon_d2e968dbbbbfd620d92276c06d7597bd = L.divIcon({
+  "html": "\u003cdiv style=\"font-family:sans-serif;color:white;font-size:10px;width:100px;\"\u003eKatriguppe\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_4bcc77f9e44c158d1a2f4de2358af8d5.setIcon(div_icon_d2e968dbbbbfd620d92276c06d7597bd);
+            
+    
+            var poly_line_c32e6cfb930baf62892ff58d31e6acec = L.polyline(
+                [[12.937624012769977, 77.5455754828156], [12.93164146426222, 77.55222328481835]],
+                {"bubblingMouseEvents": true, "color": "#00FFCC", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00FFCC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 6.14}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            poly_line_c32e6cfb930baf62892ff58d31e6acec.bindTooltip(
+                `<div>
+                     <b>From:</b> Girinagar<br><b>To:</b> Katriguppe<br><b>Trips:</b> 30.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7e36f64d71950e217247fe7297cf317a = L.marker(
+                [12.937624012769977, 77.5455754828156],
+                {
+}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            var div_icon_09e5f9f96dc22d77e09eb9966c72aa29 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family:sans-serif;color:white;font-size:10px;width:100px;\"\u003eGirinagar\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_7e36f64d71950e217247fe7297cf317a.setIcon(div_icon_09e5f9f96dc22d77e09eb9966c72aa29);
+            
+    
+            var poly_line_73c748cc4cab590a05c887ffdeb290c6 = L.polyline(
+                [[12.93164146426222, 77.55222328481835], [12.9135013167368, 77.5560572018753]],
+                {"bubblingMouseEvents": true, "color": "#00FFCC", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00FFCC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.482}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            poly_line_73c748cc4cab590a05c887ffdeb290c6.bindTooltip(
+                `<div>
+                     <b>From:</b> Katriguppe<br><b>To:</b> Padmanabha Nagar<br><b>Trips:</b> 27.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7e04a3a73d5232adea4d799ff7d79842 = L.marker(
+                [12.93164146426222, 77.55222328481835],
+                {
+}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            var div_icon_30b8a0ea7a96a7445a82523c5d4a20b7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family:sans-serif;color:white;font-size:10px;width:100px;\"\u003eKatriguppe\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_7e04a3a73d5232adea4d799ff7d79842.setIcon(div_icon_30b8a0ea7a96a7445a82523c5d4a20b7);
+            
+    
+            var poly_line_6fac73dd42d41891e69a6976fa412518 = L.polyline(
+                [[12.93164146426222, 77.55222328481835], [12.94323887258439, 77.61307911763366]],
+                {"bubblingMouseEvents": true, "color": "#00FFCC", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00FFCC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.102}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            poly_line_6fac73dd42d41891e69a6976fa412518.bindTooltip(
+                `<div>
+                     <b>From:</b> Katriguppe<br><b>To:</b> Hosakerehalli<br><b>Trips:</b> 25.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_63f2ab1a85de4cc49d334f93e274eb0b = L.marker(
+                [12.93164146426222, 77.55222328481835],
+                {
+}
+            ).addTo(map_a1218bc68758f7f0860fae8dc68cb3a0);
+        
+    
+            var div_icon_71300f1b1ae2b3e6b594ab20d72f31b5 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family:sans-serif;color:white;font-size:10px;width:100px;\"\u003eKatriguppe\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_63f2ab1a85de4cc49d334f93e274eb0b.setIcon(div_icon_71300f1b1ae2b3e6b594ab20d72f31b5);
+            
+</script>
+</html>

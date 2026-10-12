@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.553703,
+            12.923861
+          ],
+          [
+            77.554829,
+            12.923515
+          ]
+        ]
+      },
+      "properties": {
+        "name": "flyover 1",
+        "role": "main",
+        "infra_type": "Flyover",
+        "road_width_m": 8.0,
+        "extra_lanes": 0,
+        "is_oneway": false,
+        "is_feasible": true,
+        "flyover_height_m": 5.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+# Unified backend dependencies (API + all phases)
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+httpx2>=0.1.0
+python-dotenv>=0.21.0
+flask>=3.0.0
+flask-cors>=4.0.0
+requests>=2.31.0
+pyproj>=3.6.0
+sumolib>=1.20.0
+
+# Google Routes API validation uses Python's standard-library urllib client.
+
+# Phase 1 — demand analysis
+pandas>=1.5.0
+folium>=0.14.0
+
+# Phase 3 — infrastructure engine
+osmnx>=1.3.0
+geopandas>=0.12.0
+fiona>=1.9.0
+shapely>=2.0.0
+networkx>=3.0
+matplotlib>=3.6.0
+scipy>=1.9.0
+google-generativeai>=0.3.0
+
+# Optional dev UI (Streamlit debugger — not the main product UI)
+streamlit>=1.20.0
+streamlit-folium>=0.11.1

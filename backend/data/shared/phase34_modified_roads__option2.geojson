@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.5537161,
+            12.9238607
+          ],
+          [
+            77.5548786,
+            12.923478
+          ]
+        ]
+      },
+      "properties": {
+        "name": "AI Flyover",
+        "highway": "proposed_flyover",
+        "length_m": 128.1167640125936,
+        "infra_type": "Flyover",
+        "is_flyover": true,
+        "is_tunnel": false,
+        "elevation_m": 5.0
+      }
+    }
+  ]
+}

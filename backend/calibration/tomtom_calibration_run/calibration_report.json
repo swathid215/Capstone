@@ -1,0 +1,113 @@
+{
+  "status": "COMPLETED",
+  "target_hour": 9,
+  "target_dates": [
+    "2026-06-12",
+    "2026-06-13",
+    "2026-06-14",
+    "2026-06-15"
+  ],
+  "dataset_sample_count": 3,
+  "tomtom_observed_metrics": {
+    "mean_speed_kmh": 0.0,
+    "mean_travel_time_s": 0.0,
+    "congestion_level": "FREE_FLOW"
+  },
+  "demand_estimation": {
+    "congestion_level": "FREE_FLOW",
+    "speed_ratio": 0.0,
+    "travel_time_ratio": 0.0,
+    "delay_ratio": 0.0,
+    "demand_multiplier": 3.2,
+    "vehicles_per_hour": 2500.0
+  },
+  "route_split": {
+    "route_1": 0.48,
+    "route_2": 0.3,
+    "route_3": 0.15,
+    "route_4": 0.07
+  },
+  "sumo_manifest": {
+    "calibration_type": "tomtom_demand_estimation",
+    "target_hour": 9,
+    "tomtom_data_source": {
+      "dataset_dir": "C:\\Users\\hemac\\Desktop\\capstone\\UIDT-\\files_tomtom",
+      "selected_dates": [
+        "2026-06-12",
+        "2026-06-13",
+        "2026-06-14",
+        "2026-06-15"
+      ],
+      "sample_count": 3
+    },
+    "demand_estimation": {
+      "congestion_level": "FREE_FLOW",
+      "vehicles_per_hour": 2500.0,
+      "demand_multiplier": 3.2,
+      "speed_ratio": 0.0,
+      "travel_time_ratio": 0.0
+    },
+    "route_scaling": {
+      "baseline_vehicles": 900.0,
+      "estimated_vehicles": 2500.0,
+      "demand_scale": 2.7777777777777777
+    },
+    "sumo_version": "Eclipse SUMO sumo 1.27.1",
+    "selected_hour": 9,
+    "evaluation_window": {
+      "start": 8,
+      "end": 10
+    },
+    "random_seed": 42,
+    "simulation_configuration": {
+      "config_name": "tomtom_hour_9",
+      "selected_hour": 9,
+      "evaluation_window": [
+        8,
+        10
+      ],
+      "random_seed": 42
+    },
+    "command": [
+      "sumo",
+      "--net-file",
+      "C:\\Users\\hemac\\Desktop\\capstone\\UIDT-\\auto_tool\\network.net.xml",
+      "--route-files",
+      "C:\\Users\\hemac\\Desktop\\capstone\\UIDT-\\backend\\calibration\\tomtom_calibration_run\\tomtom_estimated_scaled_2.7778.rou.xml",
+      "--no-step-log",
+      "--no-duration-log"
+    ],
+    "runner_status": "COMPLETED",
+    "run_timestamp_utc": "2026-08-18T04:55:20.149106+00:00",
+    "exit_code": 0,
+    "stdout_tail": [],
+    "stderr_tail": [
+      "Warning: Teleporting vehicle 'h20_634_scale_1'; waited too long (yield), lane='1430847838_0', time=90418.00.",
+      "Warning: Vehicle 'h20_634_scale_1' ends teleporting on edge '1465241141', time=90418.00.",
+      "Warning: Vehicle 'h21_53_scale_1' ends teleporting on edge '-41196365#10', time=90419.00.",
+      "Warning: Teleporting vehicle 'h20_736_scale_1'; waited too long (wrong lane), lane='1113559569_1', time=90420.00.",
+      "Warning: Vehicle 'h20_636_scale_1' ends teleporting on edge '1465241141', time=90420.00.",
+      "Warning: Teleporting vehicle 'h19_391_scale_2'; waited too long (yield), lane='793731184_0', time=90421.00.",
+      "Warning: Vehicle 'h20_736_scale_1' ends teleporting on edge '1465241141', time=90422.00.",
+      "Warning: Vehicle 'h19_391_scale_2' ends teleporting on edge '1113559571#0', time=90424.00.",
+      "Warning: Teleporting vehicle 'h20_646_scale_1'; waited too long (jam), lane='-169802060#3_0', time=90427.00.",
+      "Warning: Teleporting vehicle 'h19_391_scale_1'; waited too long (jam), lane='-169802060#5_0', time=90434.00.",
+      "Warning: Vehicle 'h20_646_scale_1' ends teleporting on edge '1465241141', time=90505.00.",
+      "Warning: Vehicle 'h19_391_scale_1' ends teleporting on edge '1113559571#0', time=90539.00.",
+      "Warning: Teleporting vehicle 'h19_759_scale_0'; waited too long (jam), lane='1368403128#5_0', time=90721.00.",
+      "Warning: Teleporting vehicle 'h20_20_scale_1'; waited too long (yield), lane='1430847838_0', time=90722.00.",
+      "Warning: Vehicle 'h20_20_scale_1' ends teleporting on edge '1465241141', time=90722.00.",
+      "Warning: Vehicle 'h19_759_scale_0' ends teleporting on edge '1430847838', time=90723.00.",
+      "Warning: Teleporting vehicle 'h20_232_scale_2'; waited too long (yield), lane='-169802060#2_0', time=90724.00.",
+      "Warning: Vehicle 'h20_232_scale_2' ends teleporting on edge '793731184', time=90725.00.",
+      "Warning: Teleporting vehicle 'h21_41_scale_1'; waited too long (jam), lane='1368403128#2_0', time=90738.00.",
+      "Warning: Vehicle 'h21_41_scale_1' ends teleporting on edge '1368403128#3', time=90738.00."
+    ]
+  },
+  "calibration_recommendations": [
+    "If SUMO speed is lower than TomTom observed speed, consider reducing demand_scale.",
+    "If SUMO speed is higher than TomTom, consider increasing demand_scale.",
+    "Current demand scale: 2.778 (based on 2500 vehicles/hour).",
+    "Monitor route split distribution; adjust per state if certain routes are consistently under/over-utilized."
+  ]
+}

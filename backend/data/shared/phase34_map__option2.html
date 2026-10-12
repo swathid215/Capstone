@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e9209869a7fddd37b84a177b6948c7f1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    <div style="position: fixed; top: 12px; right: 12px; z-index: 9999; background: white; padding: 12px 14px; border: 1px solid #ccc; border-radius: 8px; width: 300px; font-family: sans-serif; font-size: 13px;"><b>Phase 3/4 Summary</b><br>Place: Kathriguppe, Bangalore, India<br>Type: Flyover<br>Feasible: True<br>Collisions: 0<br>Recommendation: Local Road Widening / New Link Road<br>Confidence: 0.95<br></div>
+    
+            <div class="folium-map" id="map_e9209869a7fddd37b84a177b6948c7f1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e9209869a7fddd37b84a177b6948c7f1 = L.map(
+                "map_e9209869a7fddd37b84a177b6948c7f1",
+                {
+                    center: [12.923861, 77.553703],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39c2b8a18ea9e7c7bb758dfd28dce813 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_39c2b8a18ea9e7c7bb758dfd28dce813.addTo(map_e9209869a7fddd37b84a177b6948c7f1);
+        
+    
+            var poly_line_9d3ee627e3b22acbba84e24fd4569cac = L.polyline(
+                [[12.923861, 77.553703], [12.923515, 77.554829]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_e9209869a7fddd37b84a177b6948c7f1);
+        
+    
+            poly_line_9d3ee627e3b22acbba84e24fd4569cac.bindTooltip(
+                `<div>
+                     Flyover | Feasible: True | Collisions: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_638fec88bc69899c5395c0d0179e88db = L.marker(
+                [12.923861, 77.553703],
+                {
+}
+            ).addTo(map_e9209869a7fddd37b84a177b6948c7f1);
+        
+    
+            var icon_904fbf5b95e68d085b7757e70e9eca61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_638fec88bc69899c5395c0d0179e88db.bindTooltip(
+                `<div>
+                     Start
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_638fec88bc69899c5395c0d0179e88db.setIcon(icon_904fbf5b95e68d085b7757e70e9eca61);
+            
+    
+            var marker_e9b95a8a624cdb07e07e946d251d0f2b = L.marker(
+                [12.923515, 77.554829],
+                {
+}
+            ).addTo(map_e9209869a7fddd37b84a177b6948c7f1);
+        
+    
+            var icon_d261ba95e1d4e764d454ea63ee0f6283 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e9b95a8a624cdb07e07e946d251d0f2b.bindTooltip(
+                `<div>
+                     End
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9b95a8a624cdb07e07e946d251d0f2b.setIcon(icon_d261ba95e1d4e764d454ea63ee0f6283);
+            
+    
+        function geo_json_5bd7ede9036f510ac802387c419b1bc8_styler(feature) {
+            switch(feature.properties.name) {
+                default:
+                    return {"color": "#ff9800", "opacity": 0.95, "weight": 6};
+            }
+        }
+
+        function geo_json_5bd7ede9036f510ac802387c419b1bc8_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_5bd7ede9036f510ac802387c419b1bc8 = L.geoJson(null, {
+                onEachFeature: geo_json_5bd7ede9036f510ac802387c419b1bc8_onEachFeature,
+            
+                style: geo_json_5bd7ede9036f510ac802387c419b1bc8_styler,
+            ...{
+}
+        });
+
+        function geo_json_5bd7ede9036f510ac802387c419b1bc8_add (data) {
+            geo_json_5bd7ede9036f510ac802387c419b1bc8
+                .addData(data);
+        }
+            geo_json_5bd7ede9036f510ac802387c419b1bc8_add({"features": [{"geometry": {"coordinates": [[77.5537161, 12.9238607], [77.5548786, 12.923478]], "type": "LineString"}, "properties": {"elevation_m": 5.0, "highway": "proposed_flyover", "infra_type": "Flyover", "is_flyover": true, "is_tunnel": false, "length_m": 128.1167640125936, "name": "AI Flyover"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_5bd7ede9036f510ac802387c419b1bc8.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["name", "highway", "length_m"];
+    let aliases = ["name", "highway", "length_m"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_5bd7ede9036f510ac802387c419b1bc8.addTo(map_e9209869a7fddd37b84a177b6948c7f1);
+        
+</script>
+</html>

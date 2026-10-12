@@ -1,0 +1,7 @@
+Highlights
+
+- Preserves observed, derived, and simulated traffic data lineage
+- Links historical TomTom states to intervention simulation context
+- Finds no defensible TomTom-to-SUMO parameter mapping
+- Reports a non-monotonic SUMO demand response as a validity gate
+- Demonstrates transparent baseline versus route-adoption analysis

@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            777111.8198928114,
+            1430489.5259536484
+          ],
+          [
+            777381.9196105867,
+            1430625.0582488454
+          ],
+          [
+            777674.1738231105,
+            1430716.53657671
+          ]
+        ]
+      },
+      "properties": {
+        "infra_type": "New Road",
+        "road_width_m": 8.0,
+        "is_oneway": false
+      }
+    }
+  ]
+}

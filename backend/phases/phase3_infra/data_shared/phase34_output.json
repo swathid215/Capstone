@@ -1,0 +1,67 @@
+{
+    "scenario_metadata": {
+        "name": "Phase 3/4 Demo Run",
+        "description": "Standalone Swathi H + Swathi D automation input for n8n testing.",
+        "created_at": "2026-04-22T23:23:49.881553"
+    },
+    "input_summary": {
+        "place_name": "Kathriguppe, Bangalore, India",
+        "point": null,
+        "dist_m": 5000,
+        "infra_type": "New Road",
+        "road_width_m": 8.0,
+        "is_oneway": false,
+        "geometry_type": "LineString",
+        "coordinate_count": 3,
+        "coordinates_lonlat": [
+            [
+                77.5539,
+                12.9274
+            ],
+            [
+                77.5564,
+                12.9286
+            ],
+            [
+                77.5591,
+                12.9294
+            ]
+        ]
+    },
+    "feasibility": {
+        "is_feasible": false,
+        "collision_count": 24
+    },
+    "impact_report": null,
+    "smart_recommendation": {
+        "metrics": {
+            "geometry_type": "LineString",
+            "length_meters": 608.43,
+            "building_collisions": 24,
+            "network_connections": 0,
+            "collision_density": 3.94,
+            "connectivity_score": 0.0,
+            "land_acquisition_complexity": "High",
+            "urban_density": "Very High (Dense Urban)",
+            "route_efficiency": 1.0
+        },
+        "recommendation": "Tunnel / Underground Bypass",
+        "reasoning": "High-density urban area with 24 building collisions detected. A surface road would require extensive demolition and land acquisition costing 500+ crores. An underground tunnel minimizes property disruption and is strategically optimal for long-term urban development. The 0.0 connectivity score indicates significant traffic redistribution potential.",
+        "confidence": 0.9,
+        "cost_estimate": "Very High",
+        "implementation_time": "24-36",
+        "risk_factors": [
+            "Geological surveys needed",
+            "Deep excavation complexity",
+            "Traffic diversions during construction",
+            "Underground utility conflicts"
+        ],
+        "environmental_impact": "High (Construction phase)"
+    },
+    "artifacts": {
+        "route_geojson": "/Users/tanishajayabalan/Desktop/Capstone_Project/Phase3_SwathiH/data_shared/phase34_route.geojson",
+        "collisions_geojson": "/Users/tanishajayabalan/Desktop/Capstone_Project/Phase3_SwathiH/data_shared/phase34_collisions.geojson",
+        "graphml": null,
+        "report_markdown": "/Users/tanishajayabalan/Desktop/Capstone_Project/Phase3_SwathiH/data_shared/phase34_impact_report.md"
+    }
+}

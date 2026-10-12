@@ -1,0 +1,33 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+node_modules/
+dist/
+build/
+.DS_Store
+
+# generated caches / heavy data
+backend/cache/
+backend/data/cache/
+backend/data/google_routes/
+backend/phases/phase3_infra/cache/
+backend/phases/phase3_infra/traffic-infra-engine/cache/
+
+# Google Routes API validation: keep all related local files out of Git
+backend/config/google_routes*.json
+backend/scripts/google_routes_sampler.py
+backend/tests/test_google_routes_sampler.py
+backend/data/google_routes_validation/
+backend/data/google_routes*.csv
+backend/data/google_routes*.json
+
+# generated SUMO experiment outputs and runtime logs
+docs/task28_tomtom_demand_model/runs/
+backend/logs/
+DOCS.zip
+backend/uidt_projects.db
+
+# Generated SUMO control network (baseline rebuilt by local netconvert)
+auto_tool/cleaned_network.control.net.xml
+auto_tool/cleaned_network.control.net.xml.stamp
