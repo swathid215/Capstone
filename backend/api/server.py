@@ -2,6 +2,7 @@ import sys
 import re
 import shutil
 import threading
+import time
 import sqlite3
 import uuid
 from datetime import datetime, timedelta, timezone
@@ -1000,6 +1001,66 @@ def analyze(request: AnalyzeRequest, user=Depends(current_user), user_id: Option
             user_id=user_id,
         )
     return response
+
+
+# Analyses take minutes, longer than a proxy (e.g. Vercel rewrites) will hold a
+# request open. These endpoints run the analysis in a background thread and
+# let the client poll for the result instead.
+ANALYSIS_JOBS: dict[str, dict] = {}
+ANALYSIS_JOBS_LOCK = threading.Lock()
+ANALYSIS_JOB_TTL_SECONDS = 3600
+
+
+def _start_analysis_job(request: AnalyzeRequest, user: dict, project_id: Optional[str] = None) -> dict:
+    job_id = uuid.uuid4().hex
+    now = time.time()
+    with ANALYSIS_JOBS_LOCK:
+        expired = [
+            key for key, job in ANALYSIS_JOBS.items()
+            if job["status"] != "running" and now - job["updated"] > ANALYSIS_JOB_TTL_SECONDS
+        ]
+        for key in expired:
+            del ANALYSIS_JOBS[key]
+        ANALYSIS_JOBS[job_id] = {"user_id": user["id"], "status": "running", "updated": now}
+
+    def run():
+        try:
+            if project_id:
+                result = analyze_project(project_id, request, user=user)
+            else:
+                result = analyze(request, user=user)
+            outcome = {"status_code": 200, "result": result}
+        except HTTPException as exc:
+            outcome = {"status_code": exc.status_code, "result": {"detail": exc.detail}}
+        except Exception as exc:
+            traceback.print_exc()
+            outcome = {"status_code": 500, "result": {"detail": f"Analysis failed: {exc}"}}
+        with ANALYSIS_JOBS_LOCK:
+            ANALYSIS_JOBS[job_id].update(outcome, status="done", updated=time.time())
+
+    threading.Thread(target=run, name=f"analysis-{job_id}", daemon=True).start()
+    return {"job_id": job_id, "status": "running"}
+
+
+@app.post("/api/analyze/jobs", status_code=202)
+def start_analysis_job(request: AnalyzeRequest, user=Depends(current_user)):
+    return _start_analysis_job(request, user)
+
+
+@app.post("/api/projects/{project_id}/analyze/jobs", status_code=202)
+def start_project_analysis_job(project_id: str, request: AnalyzeRequest, user=Depends(current_user)):
+    return _start_analysis_job(request, user, project_id=project_id)
+
+
+@app.get("/api/analyze/jobs/{job_id}")
+def get_analysis_job(job_id: str, user=Depends(current_user)):
+    with ANALYSIS_JOBS_LOCK:
+        job = ANALYSIS_JOBS.get(job_id)
+        if job is None or job["user_id"] != user["id"]:
+            raise HTTPException(status_code=404, detail="Analysis job not found (the server may have restarted)")
+        if job["status"] == "running":
+            return {"status": "running"}
+        return {"status": "done", "status_code": job["status_code"], "result": job["result"]}
 
 
 @app.get("/artifacts/{filename}")

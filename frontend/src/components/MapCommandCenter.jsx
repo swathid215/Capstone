@@ -1468,8 +1468,10 @@ export default function MapCommandCenter({ onGenerate, onAnalyzingChange, onRese
     };
 
     try {
-      const url = projectId ? `/api/projects/${projectId}/analyze` : '/api/analyze';
-      const res = await fetch(apiUrl(url), {
+      // Analyses run as background jobs: a single long request would be cut off
+      // by the hosting proxy, so start the job and poll until it finishes.
+      const url = projectId ? `/api/projects/${projectId}/analyze/jobs` : '/api/analyze/jobs';
+      const startRes = await fetch(apiUrl(url), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -1481,7 +1483,25 @@ export default function MapCommandCenter({ onGenerate, onAnalyzingChange, onRese
               : `${infraType} report`,
         }),
       });
-      const data = await res.json();
+      let res = { ok: startRes.ok };
+      let data = await startRes.json();
+      if (startRes.ok) {
+        while (true) {
+          await new Promise((resolve) => setTimeout(resolve, 3000));
+          const pollRes = await fetch(apiUrl(`/api/analyze/jobs/${data.job_id}`));
+          const job = await pollRes.json();
+          if (!pollRes.ok) {
+            res = { ok: false };
+            data = job;
+            break;
+          }
+          if (job.status === 'done') {
+            res = { ok: job.status_code >= 200 && job.status_code < 300 };
+            data = job.result;
+            break;
+          }
+        }
+      }
       clearInterval(progressInterval);
 
       if (!res.ok) {
