@@ -7,6 +7,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends build-essential libspatialindex-dev \
+       libgl1 libx11-6 libxext6 libxrender1 \
     && rm -rf /var/lib/apt/lists/*
 
 # Debian's packaged SUMO is older than the 1.20 network files in auto_tool/,
